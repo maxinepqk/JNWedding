@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script src="js/timezz.js"></script>
+<script>
+const timer = new TimezZ('.j-timer', {
+  date: 'Sep 26, 2020 14:00:00',
+  text: {
+    days: ' days',
+    hours: ' hours',
+    minutes: ' minutes',
+    seconds: ' seconds',
+  },
+  canContinue: true,
+  template: '<span>NUMBER</span><i>LETTER</i> ',
+});
+</script>
+
 <head>
 
   <meta charset="utf-8">
@@ -53,6 +68,7 @@
       <div class="intro-text">
         <div class="intro-lead-in">Save the date</div>
         <div class="intro-heading text-uppercase">26 September 2020</div>
+        <div class="timer j-timer"></div>
       </div>
     </div>
   </header>
