@@ -11,7 +11,8 @@
   <title>Jonathan & Natalie</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/carousel/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -62,13 +63,51 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in">Save the date</div>
-        <div class="intro-heading text-uppercase">26 September 2020</div>
+  <header>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/carousel/1.jpg">
+          <div class="carousel-caption">
+            <h2>Save the Date</h2>
+            <h7>26 September 2020</h7>
+          </div>
+        </div>
+    
+        <div class="item">
+          <img src="img/carousel/2.jpg">
+          <div class="carousel-caption">
+            <h2>Save the Date</h2>
+            <h7>26 September 2020</h7>
+          </div>
+        </div>
+    
+        <div class="item">
+          <img src="img/carousel/3.jpg">
+          <div class="carousel-caption">
+            <h2>Save the Date</h2>
+            <h7>26 September 2020</h7>
+          </div>
+        </div>
       </div>
+    
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </header>
 
@@ -84,21 +123,21 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/party/01.jpg" alt="">
-            <h4>Jonathan Muthana</h4>
+            <h4>Jonathan</h4>
             <h6 class="text-muted">Groom</h6>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/party/00.jpg" alt="">
-            <h4>Natalie Yeung</h4>
+            <h4>Natalie</h4>
             <h6>Bride</h6>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/party/1.jpg" alt="">
-            <h4>Sarah Kwok</h4>
+            <h4>Sarah</h4>
             <h6>Maid of Honour</h6>
             <p class="text-muted">Sarah and I have been inseparable (in spirit 
               if not physically!) since we were 17.  Some of my most exotic 
@@ -110,7 +149,7 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/party/2.jpg" alt="">
-            <h4>Emily Chang</h4>
+            <h4>Emily</h4>
             <h6>Bridesmaid</h6>
             <p class="text-muted">Emily and I met when I was 13, had a 3-week 
               “summer fling”, became pen pals and never looked back!  The first 
@@ -121,7 +160,7 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/party/3.jpg" alt="">
-            <h4>Yvonne Chow</h4>
+            <h4>Yvonne</h4>
             <h6>Bridesmaid</h6>
             <p class="text-muted">I met Yvonne in Freshers’ Week and she is such
                an important part of my life in HK.  Yvonne’s adorable children are 
@@ -132,7 +171,7 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/party/4.jpg" alt="">
-            <h4>Carol Wong</h4>
+            <h4>Carol</h4>
             <h6>Bridesmaid</h6>
             <p class="text-muted">I met Carol on my first day at work (and to this 
               day she still complains I bullied her?!).  We’ve shared an office (in HK) 
@@ -1032,6 +1071,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
