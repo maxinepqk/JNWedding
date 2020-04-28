@@ -1,0 +1,4 @@
+AuthType Basic  
+AuthName "restricted area"  
+AuthUserFile /Users/maxinekwan/Downloads/Files/.htpasswd
+Require valid-user
